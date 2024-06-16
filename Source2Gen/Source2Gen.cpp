@@ -22,6 +22,7 @@ std::vector<schema::CSchemaSystemTypeScope*> Source2Gen::s_scopes = []() -> std:
         schemaSystem->GlobalTypeScope(),
         schemaSystem->FindTypeScopeForModule("client.dll"),
         schemaSystem->FindTypeScopeForModule("server.dll"),
+        schemaSystem->FindTypeScopeForModule("engine2.dll"),
         schemaSystem->FindTypeScopeForModule("worldrenderer.dll")
     };
 }();

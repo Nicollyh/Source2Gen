@@ -54,20 +54,20 @@ namespace schema {
 
     private:
         static const unsigned int s_findDeclaredClassIndex = 2;
-        static const unsigned int s_findDeclaredEnumIndex = s_findDeclaredClassIndex + 1;
+        static const unsigned int s_findDeclaredEnumIndex = 3;
 
-        static const unsigned int s_findType_DeclaredClassIndex = 21;
+        static const unsigned int s_findType_DeclaredClassIndex = 14;
         static const unsigned int s_findType_DeclaredEnumIndex = s_findType_DeclaredClassIndex + 1;
-        static const unsigned int s_findRawClassBindingIndex = s_findType_DeclaredEnumIndex + 1;
-        static const unsigned int s_findRawEnumBindingIndex = s_findRawClassBindingIndex + 2;
+        static const unsigned int s_findRawClassBindingIndex = 7;
+        static const unsigned int s_findRawEnumBindingIndex = 8;
 
 #ifdef _M_IX86
-        static const unsigned int s_classList = 0x450;
-        static const unsigned int s_enumList = 0x1C90 - 8;
+        static const unsigned int s_classList = 0x0588;
+        static const unsigned int s_enumList = 0x2DD0;
 #elif _M_X64
-        static const unsigned int s_classList = 0x638;
+        static const unsigned int s_classList = 0x0588;
         // 0x2688 for VR performance test
-        static const unsigned int s_enumList = 0x2680;
+        static const unsigned int s_enumList = 0x2DD0;
 #endif
     };
 
