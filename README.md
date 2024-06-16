@@ -29,12 +29,17 @@ The entirety of what Source2Gen will generate can be found in GeneratedExample.
 # CMake importing - FetchContent
 ``` cmake
 include(FetchContent)
+
 FetchContent_Declare(
     Source2Gen
     GIT_REPOSITORY https://github.com/Nicollyh/Source2Gen.git   
     GIT_TAG master
     GIT_PROGRESS TRUE
 )
+
 FetchContent_MakeAvailable(Source2Gen)
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 494180c72a84a731035e957d33eb149cf4e4669c
