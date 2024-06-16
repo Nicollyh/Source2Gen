@@ -15,7 +15,7 @@ A DLL injector is required to use Source2Gen. This is not included.
 
 CMake.
 
-At least Visual Studio 2013 (or any compiler with C++11 support, only tested with VS2013 though)
+At least Visual Studio 2022 (or any compiler with C++11 support, only tested with VS2022 though)
 
 # Usage
 Just inject Source2Gen.dll into cs2.exe (the only Source 2 game out right now) and it will generate headers in Source2Gen/bin.
@@ -27,7 +27,7 @@ The headers will work out of the box as long as everything in Source2Gen/shared 
 The entirety of what Source2Gen will generate can be found in GeneratedExample.
 
 # CMake importing - FetchContent
-```cmake
+``` cmake
 include(FetchContent)
 FetchContent_Declare(
     Source2Gen
@@ -37,3 +37,4 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Source2Gen)
 ```
+
