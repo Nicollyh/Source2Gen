@@ -1,5 +1,6 @@
 # Credits
 Nicolly – For updating and adapting to Counter-Strike 2
+
 Praydog - To develop the original source code.
 
 # Source2Gen
