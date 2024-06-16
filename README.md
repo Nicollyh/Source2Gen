@@ -1,5 +1,6 @@
 # Credits
 Nicolly – For updating and adapting to Counter-Strike 2
+
 Praydog - To develop the original source code.
 
 # Source2Gen
@@ -24,3 +25,15 @@ The headers will work out of the box as long as everything in Source2Gen/shared 
 
 # Examples
 The entirety of what Source2Gen will generate can be found in GeneratedExample.
+
+# CMake importing - FetchContent
+```cmake
+include(FetchContent)
+FetchContent_Declare(
+    Source2Gen
+    GIT_REPOSITORY https://github.com/Nicollyh/Source2Gen.git   
+    GIT_TAG master
+    GIT_PROGRESS TRUE
+)
+FetchContent_MakeAvailable(Source2Gen)
+```
